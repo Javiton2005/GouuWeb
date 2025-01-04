@@ -69,3 +69,134 @@
     width: auto; /* Mantiene la proporción de la imagen */
     object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
 }
+
+/* Estilos para la sección ¿Cómo Funciona? */
+.timeline-section .timeline {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.timeline-section .process-step {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.timeline-section .date {
+    background-color: #4e73df;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.timeline-section .step-content {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+}
+
+.timeline-section .step-number {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #4e73df;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.timeline-section .step-text h4 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .timeline-section .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: #d4d4d4;
+    }
+
+    .timeline-section .process-step {
+        width: 50%;
+    }
+
+    .timeline-section .process-step:nth-child(odd) {
+        align-self: flex-end;
+    }
+
+    .timeline-section .process-step:nth-child(even) {
+        align-self: flex-start;
+    }
+
+    .timeline-section .process-step:nth-child(odd) .step-content::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 2px;
+        background-color: #d4d4d4;
+    }
+
+    .timeline-section .process-step:nth-child(even) .step-content::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 2px;
+        background-color: #d4d4d4;
+    }
+}
+
+/* Estilos para la sección de videos */
+.video-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.custom-video {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 767px) {
+    .video-section {
+        flex-direction: column;
+    }
+
+    .custom-video {
+        height: 100vh; /* Altura completa de la pantalla */
+    }
+
+    .video-section p {
+        margin-top: 10px;
+    }
+}
