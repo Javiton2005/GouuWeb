@@ -37,7 +37,7 @@
 .stat-number {
     font-size: 48px;
     font-weight: bold;
-    color: #7c4dff;
+    color: #f7f7f7;
 }
 
 .cta-section {
@@ -62,4 +62,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
+}
+
+.image-section .custom-height-img {
+    height: 400px; /* Establece la altura específica */
+    width: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
 }
