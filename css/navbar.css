@@ -1,0 +1,43 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+}
+
+#logo_navbar {
+    height: auto;
+    width: 200px;
+}
+
+#logo_navbar img {
+    height: 100%;
+    width: 100%;
+}
+
+.miactive {
+    border-bottom: 3px solid green !important;
+}
+
+.contenedorElementosNavBar * {
+    margin: 10px;
+}
+
+.nav-link img {
+    height: 20px;
+}
+
+/* Añade estas reglas para mejorar la visualización en móvil */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 10px;
+    }
+    
+    .contenedorElementosNavBar * {
+        margin: 5px 0;
+    }
+
+    /* Nuevo: separación entre icono y texto en móvil */
+    .nav-link img {
+        margin-right: 5px;
+    }
+}

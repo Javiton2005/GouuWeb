@@ -1,0 +1,65 @@
+.hero-section {
+    background: linear-gradient(135deg, #7c4dff 0%, #4a148c 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background: white;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 48px;
+    color: #7c4dff;
+    margin-bottom: 20px;
+}
+
+.stats-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #7c4dff;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #4a148c 0%, #7c4dff 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.process-step {
+    text-align: center;
+    padding: 30px;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: #7c4dff;
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}

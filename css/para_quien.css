@@ -1,0 +1,107 @@
+main {
+    min-height: 2000px;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #7c4dff 0%, #4a148c 100%);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.audience-card {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background: white;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.audience-card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    margin: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #4a148c;
+}
+
+.profile-type {
+    text-align: center;
+    padding: 40px;
+    margin: 30px 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.profile-icon {
+    font-size: 64px;
+    color: #7c4dff;
+    margin-bottom: 25px;
+}
+
+.testimonial-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #4a148c 0%, #7c4dff 100%);
+    color: white;
+    margin: 80px 0;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    backdrop-filter: blur(10px);
+}
+
+.stats-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.stat-number {
+    font-size: 48px;
+    color: #7c4dff;
+    font-weight: bold;
+}
+
+.cta-section {
+    padding: 100px 0;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.bullet-point {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.bullet-point::before {
+    content: "✓";
+    color: #7c4dff;
+    font-size: 20px;
+    margin-right: 10px;
+}

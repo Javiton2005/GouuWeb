@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.instagram-post {
+    margin: 20px auto;
+    max-width: 540px;
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media-item {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    flex: 1 1 100%; /* Default: Full width */
+    box-sizing: border-box;
+}
+
+/* Media queries for different breakpoints */
+@media (min-width: 768px) {
+    .media-item {
+        flex: 1 1 48%; /* Two columns */
+    }
+}
+
+@media (min-width: 1024px) {
+    .media-item {
+        flex: 1 1 30%; /* Three columns */
+    }
+}
+
+@media (min-width: 1440px) {
+    .media-item {
+        flex: 1 1 22%; /* Four columns */
+    }
+}

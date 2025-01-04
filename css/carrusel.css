@@ -1,0 +1,120 @@
+/* Estilos principales del contenedor del carrusel */
+.carousel-container {
+    position: relative;
+    width: 100%; /* Ajustado a ancho completo */
+    height: 600px; /* Altura ajustable según necesidades */
+    margin: 0; /* Sin margen automático */
+    overflow: hidden; /* Oculta contenido que se desborde */
+}
+
+/* Carrusel con transiciones */
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out; /* Transición suave entre diapositivas */
+}
+
+/* Estilo de cada diapositiva */
+.slide {
+    min-width: 100%; /* Cada diapositiva ocupa el 100% del ancho */
+    height: 100%;
+    position: relative; /* Para posicionar contenido dentro de la diapositiva */
+}
+
+/* Imagen dentro de la diapositiva */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+/* Texto superpuesto en las diapositivas */
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2; /* Coloca el texto encima de otros elementos */
+    width: 80%; /* Limita el ancho del texto */
+}
+
+/* Títulos en las diapositivas */
+.slide-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+}
+
+/* Párrafos en las diapositivas */
+.slide-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Capa oscura semitransparente para mejor contraste del texto */
+.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Capa semitransparente negra */
+    z-index: 1; /* Detrás del texto pero encima de la imagen */
+}
+
+/* Botones del carrusel */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+/* Estilo al pasar el mouse sobre los botones */
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8); /* Fondo más oscuro */
+}
+
+/* Botón anterior */
+#prevBtn {
+    left: 10px;
+}
+
+/* Botón siguiente */
+#nextBtn {
+    right: 10px;
+}
+
+/* Indicadores de las diapositivas (puntos) */
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; /* Espacio entre los puntos */
+}
+
+/* Estilo de los puntos */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5); /* Puntos semitransparentes */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición suave al cambiar */
+}
+
+/* Punto activo */
+.dot.active {
+    background: white; /* Puntos activos en blanco sólido */
+}
