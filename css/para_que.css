@@ -184,6 +184,7 @@
 .custom-video {
     width: 100%;
     height: auto;
+    aspect-ratio: 16 / 9; /* Mantén la relación de aspecto */
 }
 
 /* Estilos específicos para dispositivos móviles */
@@ -193,7 +194,8 @@
     }
 
     .custom-video {
-        height: 100vh; /* Altura completa de la pantalla */
+        width: 100vw -20px; /* Ancho completo de la pantalla */
+        height: auto; /* Mantén la relación de aspecto */
     }
 
     .video-section p {
