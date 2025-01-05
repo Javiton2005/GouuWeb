@@ -3,6 +3,7 @@
     color: white;
     padding: 100px 0;
     text-align: center;
+    margin-top: 30px;
 }
 
 .feature-card {
@@ -170,6 +171,9 @@
         width: 20px;
         height: 2px;
         background-color: #d4d4d4;
+    }
+    .spacer{
+        height: 30px;
     }
 }
 

@@ -54,3 +54,9 @@ body {
     width: 100%;
     left: 0;
 }
+
+.container-fluid{
+    padding: 0;
+    margin-left: 50px; 
+    margin-right: 50px;
+}
