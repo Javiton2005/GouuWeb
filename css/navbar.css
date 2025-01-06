@@ -2,9 +2,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1030; /* Asegura que esté por encima de otros elementos */
-    background-color: #fff; /* Fondo blanco para el navbar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para distinguir el navbar */
+    z-index: 1030;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #logo_navbar {
@@ -29,7 +29,6 @@
     height: 20px;
 }
 
-/* Añade estas reglas para mejorar la visualización en móvil */
 @media (max-width: 380px) {
     .container-fluid{
         padding: 0PX !important;
@@ -39,7 +38,6 @@
         margin: 0px ;
     }
 
-    /* Nuevo: separación entre icono y texto en móvil */
     .nav-link img {
         margin-right: 0px;
     }
@@ -57,7 +55,7 @@
     }
 
     .navbar-collapse {
-        background-color: #fff; /* Fondo blanco para el menú desplegable */
+        background-color: #fff; 
     }
 
     .navbar-nav .nav-item {

@@ -3,7 +3,6 @@
     color: white;
     padding: 100px 0;
     text-align: center;
-    margin-top: 30px;
 }
 
 .feature-card {
@@ -66,12 +65,11 @@
 }
 
 .image-section .custom-height-img {
-    height: 400px; /* Establece la altura específica */
-    width: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
+    height: 400px;
+    width: auto;
+    object-fit: cover; 
 }
 
-/* Estilos para la sección ¿Cómo Funciona? */
 .timeline-section .timeline {
     position: relative;
     padding: 20px 0;
@@ -177,7 +175,6 @@
     }
 }
 
-/* Estilos para la sección de videos */
 .video-section {
     display: flex;
     flex-direction: row;
@@ -188,18 +185,17 @@
 .custom-video {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9; /* Mantén la relación de aspecto */
+    aspect-ratio: 16 / 9;
 }
 
-/* Estilos específicos para dispositivos móviles */
 @media (max-width: 767px) {
     .video-section {
         flex-direction: column;
     }
 
     .custom-video {
-        width: 100vw -20px; /* Ancho completo de la pantalla */
-        height: auto; /* Mantén la relación de aspecto */
+        width: 100vw -20px;
+        height: auto; 
     }
 
     .video-section p {
