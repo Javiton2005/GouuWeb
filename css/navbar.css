@@ -30,6 +30,9 @@
 }
 
 @media (max-width: 380px) {
+    .navbar{
+        position: fixed !important;
+    }
     .container-fluid{
         padding: 0PX !important;
     }
